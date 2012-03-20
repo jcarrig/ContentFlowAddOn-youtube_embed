@@ -1,0 +1,103 @@
+@import url("reset.css"); /* reset browser behaviors */
+
+/* BODY
+------------------------------------------------------------ */
+html, body { min-height: 100%; height: 100%; width: 100%; padding: 0; margin: 0; }
+body { font: normal 70%/1.7 verdana, arial, sans-serif; color: #fff; background-color: #333; text-align: left;}
+
+/* HEADERS
+------------------------------------------------------------ */
+h1 { font: 240%/1.2 arial, helvetica, sans-serif; color: #ef4135; padding-bottom: .4em; }
+h2 { font: bold 150%/1.2 arial, helvetica, sans-serif; color: #000; padding-bottom: 1.2em; }
+h3 { font: bold 120%/1.3 arial, helvetica, sans-serif; color: #ef4135; padding-bottom: 0.2em; }
+h4 { font: 90%/1.1 verdana, arial, sans-serif; padding-bottom: 1.5em; }
+h5 { font: 90%/1.1 verdana, arial, sans-serif; color: #777; padding-bottom: 1.5em; }
+h6 { font: 90%/1.1 verdana, arial, sans-serif; color: #000; padding-bottom: 1.5em; }
+sup, sub { font-size: 80%; font-family: "trebuchet ms", arial, sans-serif; }
+
+/* DEFAULT ANCHOR LINKS
+------------------------------------------------------------ */
+a:link, a:visited { color: #ef4135; text-decoration: underline; }
+a:hover, a:active { color: #ff0000; text-decoration: underline; }
+
+/* HTML TABLES
+------------------------------------------------------------ */
+table { border-spacing: 0; margin-bottom: 2em; }
+th, td { font-size: 100%; vertical-align: top; }
+
+	table.formatTable { margin-left: auto; margin-right: auto; }
+	table.formatTable th, table.formatTable td { border: 1px solid #a89574; padding: 2px 8px; }
+	table.formatTable th { background: #dec2a5 url(../../images/bgTableHd.jpg) repeat-x center; font-weight: bold; text-align: center; color: #000; }
+	table.formatTable tr { background: #FFF; }
+
+/* PARAGRAPH
+------------------------------------------------------------ */
+p { margin-bottom: 1.3em; }
+
+/* ORDERED AND UNORDERED LISTS
+------------------------------------------------------------ */
+ul, ol { margin: 1.5em 0 1.5em 5em; }
+ul { list-style: disc; }
+	ul ul { list-style: circle; margin: 0 2.5em; }
+		ul ul ul { list-style: square; margin: 0 2.5em; }
+ol { list-style: decimal; }
+	ol ol { list-style: lower-alpha; margin: 0 2.5em; }
+		ol ol ol { list-style: lower-roman; margin: 0 2.5em; }
+
+/* IMAGES
+------------------------------------------------------------ */
+a img { border: 0; }
+img.floatRight { margin: 8px 0 8px 15px; }
+img.floatLeft { margin: 8px 15px 8px 0; }
+img.center { margin: 8px auto; }
+
+
+/* COMMON CLASSES
+------------------------------------------------------------ */
+/* color palette */
+.black { color: #000; }
+.white { color: #FFF; }
+.red, .error { color: #C00; }
+
+/* text alignment */
+.alignRight { text-align: right; }
+.alignLeft { text-align: left; }
+.alignCenter { text-align: center; }
+.justify { text-align: justify; }
+
+/* block element alignment */
+.floatLeft { float: left; }
+.floatRight { float: right; }
+.center { display: block; margin: 0 auto; }
+
+/* clear classes */
+.clear { clear: both; margin: 0; padding: 0; }
+.clearLeft { clear: left; }
+.clearRight { clear: right; }
+
+/* image replacement technique */
+.imgReplace { text-indent: -9999px; margin: 0; padding: 0; position: absolute; }
+
+/* hidden content */
+.hide, .printOnly { display: none; }
+
+/* common text styles */
+.bold { font-weight: bold; }
+.italic { font-style: italic; }
+
+/* video style */
+div.video-top { background-color: #333; position: relative; top: -5px; }
+
+div.video-nav { background-color: #333; height: 70px; width: 880px; z-index: 0; }
+	div.video-nav h2 { color: #ef4135; position: absolute; top: 32px; left: 45px; }
+	div.video-nav ul { margin: 0; position: absolute; top: 32px; right: 30px; }
+		div.video-nav ul li { background-image: none; display: inline; font: bold 12px/1 Arial, Helvetica, sans-serif; list-style: none; padding: 0 20px; }
+		div.video-nav a:link, div.video-nav a:visited { color: #FFF; text-decoration: none; }
+		div.video-nav a:hover, div.video-nav a:active { color: #ef4135; text-decoration: underline; }
+		div.video-nav ul li { background-image: none; }
+
+div.video-content { color: #FFF; padding: 5px 45px 45px 45px; text-align: center; }
+
+div.video-bottom { color: #fff; background-color: #333; margin-bottom: 20px; padding: 5px 50px 15px 50px; position: relative; top: -5px; min-height:90px; }
+	div.video-bottom h3 { color: #fff; }
+	div.video-bottom span { float: right; margin: -10px 0 0 50px; width:113px; }

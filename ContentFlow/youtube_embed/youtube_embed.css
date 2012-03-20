@@ -1,0 +1,11 @@
+/* overwrite contentflow styles */
+
+div.browse {position:absolute;top:-100px;background:url(browse.png) no-repeat 0 0; cursor:pointer; height:74px; width:50px;}
+div.browse.nextButton {background-position:0 -74px;right:-200px;}
+div.browse.preButton {left:-200px;}
+div#ytcf {display:none;}
+div#itemContainer {height:0px; width:0px; visibility:hidden;}
+#ytContainer { position:relative; width:480px; margin:0 auto; }
+#ytPlayer { position:absolute; top:40px; left:0; z-index:10;  }
+.ContentFlow .scrollbar.off { background: none; cursor: default; }
+.ContentFlow .scrollbar .slider.off { display: none; }

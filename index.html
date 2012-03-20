@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Video Gallery</title>	
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script type="text/javascript">
+			var youtube_embed_config = {
+				'user': 'carrigjack'
+				//'user': 'kjcarrig'
+				//'user': 'tfl1997'
+			};
+		</script>
+		<script type="text/javascript" src="ContentFlow/contentflow.js" load="youtube_embed"></script>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var ytcf = new ContentFlow('ytcf',{'circularFlow':false,'maxItemHeight':295,'reflectionHeight':0.3});	
+		</script>
+		<div class="content">
+			<div class="video-top">
+				<div class="video-nav">
+					<h2>Video Gallery</h2>
+				</div>
+				<div class="video-content" style="min-height:417px; height:417px;">
+					<div id="ytContainer"></div>
+					<img id="loadPlaceholder" src="ContentFlow/img/loader.gif" style="margin-top:150px;" />
+					<div id="ytcf" class="ContentFlow" style="display:none;">
+						<div class="loadIndicator"><div class="indicator"></div></div>
+						<div class="flow"></div>
+						<div class="globalCaption"></div>
+						<div class="scrollbar">
+							<div class="preButton browse"></div>
+							<div class="nextButton browse"></div>
+							<div class="slider"><div class="position"></div></div>
+						</div>
+						<div id="itemContainer"></div>
+					</div>
+				</div>
+			</div>
+			<div class="video-bottom">
+				<span>
+					<a class="video-link" href="#" title="Watch on YouTube">Watch on YouTube</a>
+				</span>
+				<h3>&nbsp;</h3>
+				<p>&nbsp;</p>
+			</div>
+		</div>
+	</body>
+</html>
